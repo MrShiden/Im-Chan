@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imChan.UiController">
+   <left>
+      <AnchorPane prefHeight="359.0" prefWidth="192.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="186.0" layoutX="10.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Lain-chan.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="411.0" style="-fx-background-color: #222B2E;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lb_1" layoutX="29.0" layoutY="84.0" text="Por cambiar: " textFill="#ebebeb" />
+            <TextField fx:id="tv_select" layoutX="127.0" layoutY="79.0" />
+            <Button fx:id="btn_select" layoutX="298.0" layoutY="79.0" mnemonicParsing="false" onAction="#btnSelectAction" text="Select" />
+            <Label fx:id="lb_2" layoutX="29.0" layoutY="141.0" text="Destino:" textFill="#ebebeb" />
+            <TextField fx:id="tv_destiny" layoutX="127.0" layoutY="136.0" />
+            <Button fx:id="btn_destiny" layoutX="298.0" layoutY="136.0" mnemonicParsing="false" onAction="#btnDestinyAction" text="Select" />
+            <Button fx:id="btn_iniciar" layoutX="66.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnIniciarOnAction" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: #16A085;" text="Iniciar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_cerrar" layoutX="237.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnCerrarOnAction" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: #A90808;" text="Cerrar" textFill="WHITE" />
+            <Label fx:id="lb_tips" layoutX="59.0" layoutY="27.0" text="Selecciones las carpetas con imagenes" textFill="#14d1fc">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_21" layoutX="29.0" layoutY="194.0" text="Prefijo:" textFill="#ebebeb" />
+            <TextField fx:id="tv_prefijo" layoutX="127.0" layoutY="189.0" promptText="No usar (#.,/%$@?¡[]{}())" />
+            <Label fx:id="lb_211" layoutX="29.0" layoutY="247.0" text="Sufijo:" textFill="#ebebeb" />
+            <TextField fx:id="tv_sufijo" layoutX="127.0" layoutY="242.0" promptText="Solo Numeros" />
+         </children></AnchorPane>
+   </right>
+</BorderPane>
